@@ -6,4 +6,22 @@ header{
     top: 0px;
     left: 0px;
     z-index: 10;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+}
+
+header ul{
+    float: right;
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+header li{
+    margin-right: 30px;
+    font-size: 20px;
+    color: black;
 }
