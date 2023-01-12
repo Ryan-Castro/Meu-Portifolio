@@ -1,19 +1,17 @@
 let repos = []
 
 
-
-
-fetch('https://api.github.com/users/Ryan-Castro/repos').then(async(response)=>{
+fetch('https://gh-pinned-repos.egoist.dev/?username=Ryan-Castro').then(async(response)=>{
     repos = await response.json()
     repos.forEach(repo => {
-       if(repo.name != "Meu-Portifolio"){ $("#repositories").children().append(`
-            <a href="${repo.html_url}" target="_blank" rel="external">
+    $("#repositories").children().append(`
+            <a href="${repo.link}" target="_blank" rel="external">
                 <div class="repo">
-                    <h1>${repo.name}</h1>
+                    <h1>${repo.repo}</h1>
                     <p>${repo.description}</p>
                 </div>
             </a>
-    `)}
+    `)
     });
 
 })

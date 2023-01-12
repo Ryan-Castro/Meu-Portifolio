@@ -1,6 +1,6 @@
 header{
     width: 100vw;
-    height: 50px;
+    height: 100px;
     background-color: grey;
     position: fixed;
     top: 0px;
@@ -24,4 +24,16 @@ header li{
     margin-right: 30px;
     font-size: 20px;
     color: black;
+}
+
+@media (max-width: 600px) {
+    header ul{
+        flex-direction: column;
+    }
+    header li{
+        font-size: 20px;
+        color: black;
+        margin: 5px 0px;
+    }
+    
 }
