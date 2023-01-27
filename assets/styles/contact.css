@@ -50,7 +50,7 @@ h1{
     display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
-    gap: 100px;
+    gap: 50px;
 }
 #socials h1{
     margin-bottom: 50px;
@@ -58,5 +58,43 @@ h1{
 }
 
 #socials img{
-    width: 100px;
+    width: 100%;
+}
+
+@media (max-width:1000px){
+    main{
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: auto;
+        padding: 50px;
+    }
+    section{
+        width: 80%;
+    }
+    #socials{
+        margin-top: 50px;
+    }
+}
+@media (max-width:600px){
+    main{
+        padding: 20px;
+    }
+    section{
+        width: 100%;
+    }
+    form > input{
+        text-align: center;
+    }
+    #formSection{
+        padding: 30px 15px;
+    }
+    #socials h1{
+       font-size: 30px;
+    }
+    #socials div{
+        gap: 30px;
+    }
+    #socials{
+        padding: 20px;
+    }
 }
