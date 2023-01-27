@@ -86,6 +86,7 @@ img{
     flex-direction: column-reverse;
     overflow-y: auto;
     padding-bottom: 50px;
+    justify-content: flex-start;
   }
   #introduction{
     margin-top: -70px;
