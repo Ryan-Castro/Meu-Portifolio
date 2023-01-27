@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../styles/globalStyles.css">
-
+    <link rel="stylesheet" href="../styles/contact.css">
 </head>
 <body>
     <header>
@@ -21,22 +21,35 @@
     </header>
     <main>
         <section id="formSection">
-            <h1>Me envie um e-mail</h1>
+            <h1>Enviar um e-mail</h1>
             <form action="https://formsubmit.co/ryandasilva1008@gmail.com" method="POST">
                 <input type="text" name="name" placeholder="Nome" required>
                 <input type="email" name="email" placeholder="Email" required>
-                <input type="radio" name="subject" id="" checked value='projeto'>proposta de projeto
-                <input type="radio" name="subject" id="" value="vaga">proposta pra vaga
-                <input type="radio" name="subject" id="" value="contato">Entrar em contato
-                <textarea name="message" id="" cols="30" rows="10"></textarea>
+                <fieldset>
+                    <input type="radio" name="subject" id="projeto" checked value='projeto'>
+                        <label for="projeto">Proposta de projeto</label> <br>
+                    <input type="radio" name="subject" id="vaga" value="vaga">
+                        <label for="vaga">Proposta pra vaga</label> <br>
+                    <input type="radio" name="subject" id="contato" value="contato">
+                        <label for="contato">Entrar em contato</label> <br>
+                </fieldset>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Mande sua mendagem"></textarea>
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_autoresponse" value="your custom message">
                 <input type="hidden" name="_next" value="https://ryan-castro.github.io/Meu-Portifolio/">
                 <button type="submit">enviar</button>
            </form>
         </section>
-        <section>
-            
+        <section id="socials">
+            <h1>Meus perfils</h1>
+            <div>
+                <a href=""><img src="../images/logo_facebook.webp" alt=""></a>
+                <a href=""><img src="../images/logo_github.webp" alt=""></a>
+                <a href=""><img src="../images/logo_gmail.png" alt=""></a>
+                <a href=""><img src="../images/logo_instagram.png" alt=""></a>
+                <a href=""><img src="../images/logo_linkedin.png" alt=""></a>
+                <a href=""><img src="../images/logo_whatsApp.png" alt=""></a>
+            </div>
         </section>
     </main>
 </body>
