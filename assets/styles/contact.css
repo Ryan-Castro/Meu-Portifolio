@@ -38,7 +38,7 @@ fieldset>input{
     margin: 10px;
 }
 
-h1{
+#formSection h1{
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
@@ -47,14 +47,21 @@ h1{
     padding: 50px;
 }
 #socials div{
+    max-height: 60vh;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     justify-items: center;
     gap: 50px;
+    overflow: auto;
+}
+#socials a{
+    text-align: center;
 }
 #socials h1{
     margin-bottom: 50px;
     font-size: 50px;
+    width: 100%;
+    text-align: center;
 }
 
 #socials img{

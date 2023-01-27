@@ -36,6 +36,9 @@ main{
   margin-bottom: 10px;
   text-indent: 50px;
 }
+#introduction div{
+  width: 60%;
+}
 
 #introduction a{
   width: 100%;
