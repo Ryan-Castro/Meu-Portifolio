@@ -1,40 +1,56 @@
-
 main{
   width: 100%;
   height: 95%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  padding: 0px 100px;
 }
 
 #imgDiv{
-  width: 35%;
+  width: 50%;
+  margin-right: -50px;
   display: flex;
   align-items: center;
 }
 #introduction{
   display: flex;
-  align-items: center;
-  width: 50%;
+  align-items: flex-start;
+  width: 630px;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.4);
-  padding: 30px;
   border-radius: 50px;
-  box-shadow: 1px 1px 1px white;
+  color: white;
 }
 #introduction h1{
-  font-size: 50px;
-  margin-bottom: 15px;
+  width: 100%;
+  text-align: justify;
+  font-size: 64px;
+  margin-bottom: -15px;
+  color: #0000FF;
+  text-shadow: .5px .5px 0px rgba(255, 255, 255, 0.4);
+  font-weight: 700;
 }
 #introduction h2{
-  font-size: 25px;
-  margin-bottom: 15px;
+  font-size: 40px;
+  margin-bottom: 20px;
+  white-space: nowrap;
+  color: #1212B3;
+  font-weight: 500;
+  text-shadow: .5px .5px 0px rgba(255, 255, 255, 0.4);
 }
 #introduction h3{
-  font-size: 20px;
+  font-size: 25px;
   margin-bottom: 10px;
+  color: #a7a7a7;
+  font-weight: 300;
+}
+#introduction h4{
+  color: #8d8d8d;
+  font-size: 20px;
+  margin-bottom: 5px;
   text-indent: 50px;
+  font-weight: 200;
 }
 #introduction div{
   width: 60%;
@@ -45,13 +61,14 @@ main{
 }
 #introduction button{
   width: 100%;
-  height: 50px;
+  height: 70px;
   font-size: 30px;
-  background-color: aqua;
+  background-color: #FF5C08;
   border-radius: 20px;
   color: white;
   text-shadow: 1px 1px 1px black;
   margin-top: 30px;
+  border: none;
 }
 
 img{
@@ -59,9 +76,25 @@ img{
     transform: translateY(0px);
     animation: float 5s ease-in-out infinite;
 }
+#logos{
+  width: 100% !important;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
 #logos img{
   width: 50px;
+  background-color: white;
+  padding: 5px;
+  border-radius: 50%;
+  overflow: visible;
   animation: none;
+  transition: .5s;
+}
+
+#logos img:hover{
+  transform: scale(1.2);
 }
 
 @keyframes float {
